@@ -2,12 +2,21 @@ import { Clock, DollarSign, FileQuestionMark, FileText } from "lucide-react";
 import Hero from "../components/layout/Hero";
 import Navbar from "../components/layout/Navbar";
 import FeatureHighlight from "../components/ui/FeatureHighlight";
+import SectionHeader from "../components/ui/SectionHeader";
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-7xl py-4">
       <Navbar />
       <Hero />
+      <SectionHeader
+        title={
+          <>
+            Allt du behöver, <em className="text-indigo-500">inget mer</em>
+          </>
+        }
+        tag="FUNKTIONER"
+      />
       <div className="grid grid-cols-12 gap-4">
         <FeatureHighlight
           title="Fakturor på 2 minuter"
