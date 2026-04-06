@@ -16,7 +16,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ClerkProvider publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY!}>
-      <div className="font-inter min-h-screen">
+      <div className="min-h-screen font-sans">
         <RouterProvider router={router} />
       </div>
     </ClerkProvider>
