@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 
 export default function Navbar() {
   return (
-    <header className="sticky mx-auto mb-4 flex w-full max-w-4xl justify-between rounded-full border border-neutral-500 bg-white px-6 py-3 shadow-md">
+    <header className="sticky top-4 mx-auto mb-4 flex w-full max-w-4xl justify-between rounded-full border border-neutral-500 bg-white px-6 py-3 shadow-md">
       <h1 className="text-lg font-black tracking-tight text-indigo-500 uppercase">Invoice app</h1>
       <div className="flex items-center justify-center space-x-2">
         {/* <nav className="flex items-center justify-center space-x-2">
