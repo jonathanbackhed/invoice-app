@@ -14,7 +14,7 @@ export default function Hero() {
       </p>
       <Show when="signed-out">
         <SignUpButton>
-          <button className="mt-2 rounded-lg border border-indigo-500 bg-indigo-500 px-20 py-2 font-semibold text-white transition-colors duration-150 hover:cursor-pointer hover:bg-white hover:text-indigo-500">
+          <button className="mt-2 rounded-lg border border-indigo-500 bg-indigo-500 px-20 py-2 font-semibold text-white transition-colors duration-100 hover:cursor-pointer hover:bg-white hover:text-indigo-500">
             Kom igång gratis
           </button>
         </SignUpButton>
@@ -22,7 +22,7 @@ export default function Hero() {
       <Show when="signed-in">
         <NavLink
           to="/dashboard"
-          className="mt-2 rounded-lg border border-indigo-500 bg-indigo-500 px-20 py-2 font-semibold text-white transition-colors duration-150 hover:cursor-pointer hover:bg-white hover:text-indigo-500"
+          className="mt-2 rounded-lg border border-indigo-500 bg-indigo-500 px-20 py-2 font-semibold text-white transition-colors duration-100 hover:cursor-pointer hover:bg-white hover:text-indigo-500"
         >
           Till dashboard
         </NavLink>
