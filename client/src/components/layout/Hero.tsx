@@ -6,15 +6,15 @@ import { NavLink } from "react-router";
 export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center space-y-2 py-12 md:py-24 lg:py-32">
-      <h2 className="text-center font-serif text-3xl tracking-tight sm:text-4xl md:text-5xl">
-        <span className="block sm:inline">
+      <h2 className="t text-center font-serif text-4xl tracking-tight sm:text-5xl md:text-6xl">
+        <span className="block">
           Fakturera <em className="text-indigo-500">smartare.</em>
         </span>{" "}
         Få betalt snabbare.
       </h2>
-      <p className="max-w-2xl text-center text-xl tracking-tight text-neutral-500">
-        INVOICE APP är faktureringsverktyget för svenska frilansare och småföretag. Skapa professionella fakturor och
-        offerter på minuter — utan krångel.
+      <p className="max-w-2xl text-center text-sm tracking-tight text-neutral-500 sm:text-lg md:text-xl">
+        Det professionella fakturaverktyget för svenska frilansare och småföretag. Skapa, skicka och följ
+        upp fakturor på minuter — utan krångel.
       </p>
       <div className="mt-2 space-y-4 text-center">
         <Show when="signed-out">
