@@ -16,6 +16,11 @@ interface Props {
 export default function PricingCard({ tag, price, subTitle, perks, buttonText, buttonHref, mostPopular }: Props) {
   return (
     <div className={cn("flex flex-col rounded-xl p-8", mostPopular && "border-2 border-indigo-500")}>
+      {mostPopular && (
+        <div className="mb-4 w-fit rounded-full bg-indigo-50 px-3 py-1 text-xs tracking-wide text-indigo-500">
+          Mest populär
+        </div>
+      )}
       <span className="text-sm font-semibold">{tag}</span>
       <span className="font-serif text-4xl">{price}</span>
       <span className="text-xs">{subTitle}</span>
@@ -32,7 +37,10 @@ export default function PricingCard({ tag, price, subTitle, perks, buttonText, b
 
       <NavLink
         to={buttonHref}
-        className={cn("mt-6 rounded-xl px-4 py-2 text-center font-semibold", mostPopular && "bg-indigo-500 text-white")}
+        className={cn(
+          "mt-6 rounded-xl px-4 py-2 text-center font-semibold text-neutral-900 transition-colors duration-100 hover:opacity-80",
+          mostPopular && "bg-indigo-500 text-white hover:opacity-90 active:bg-indigo-600",
+        )}
       >
         {buttonText}
       </NavLink>

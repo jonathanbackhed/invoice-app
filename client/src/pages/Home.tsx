@@ -4,6 +4,7 @@ import Navbar from "../components/layout/Navbar";
 import FeatureHighlight from "../components/ui/FeatureHighlight";
 import SectionHeader from "../components/ui/SectionHeader";
 import PricingCard from "../components/ui/PricingCard";
+import Testimonial from "../components/ui/Testimonial";
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-3xl">
+        <section className="mx-auto">
           <SectionHeader title={<>Igång på tre steg</>} tag="HUR DET FUNGERAR" />
           <div className="flex flex-col gap-4 sm:flex-row">
             <div className="flex flex-col space-y-2">
@@ -72,7 +73,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-3xl">
+        <section className="mx-auto">
           <SectionHeader
             title={
               <>
@@ -81,7 +82,7 @@ export default function Home() {
             }
             tag="PRISER"
           />
-          <div className="flex justify-between">
+          <div className="flex flex-col justify-between sm:flex-row">
             <PricingCard
               tag="Gratis"
               price="0 kr"
@@ -111,6 +112,37 @@ export default function Home() {
               perks={["Allt i Pro", "Upp till 5 användare", "Roller & behörigheter", "Prioriterad support"]}
               buttonText="Välj Företag"
               buttonHref="#"
+            />
+          </div>
+        </section>
+
+        <section className="mx-auto">
+          <SectionHeader
+            title={
+              <>
+                Älskad av <em className="text-indigo-500">frilansare</em>
+              </>
+            }
+            tag="KUNDBERÄTTELSER"
+          />
+          <div className="flex flex-col justify-between gap-8 sm:flex-row sm:gap-4">
+            <Testimonial
+              text="Har testat Fortnox och Visma men det var alldeles för mycket. Det här är precis rätt nivå — snabbt och enkelt."
+              rating={5}
+              name="Anna Lindqvist"
+              subName="Grafisk designer, Malmö"
+            />
+            <Testimonial
+              text="Spar mig minst en timme per vecka. Offertsystemet är guld — kunden accepterar och fakturan skapas automatiskt."
+              rating={5}
+              name="Marcus Karlsson"
+              subName="Webbutvecklare, Göteborg"
+            />
+            <Testimonial
+              text="Enkel att lära sig och SIE-exporten gör att min revisor är nöjd. Rekommenderar varmt till alla egenföretagare."
+              rating={5}
+              name="Sara Eriksson"
+              subName="Fotograf & videograf"
             />
           </div>
         </section>
