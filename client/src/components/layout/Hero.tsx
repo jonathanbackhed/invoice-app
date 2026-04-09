@@ -28,7 +28,7 @@ export default function Hero() {
               href="#"
               className="flex items-center gap-1 px-5 py-3 text-neutral-900 hover:cursor-pointer hover:opacity-80 sm:px-8"
             >
-              Se hur det fungerar <ArrowRight size={12} className="" />
+              Se hur det fungerar <ArrowRight size={12} />
             </a>
           </div>
         </Show>

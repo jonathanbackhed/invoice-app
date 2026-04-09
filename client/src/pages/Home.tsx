@@ -1,10 +1,12 @@
-import { Clock, DollarSign, FileQuestionMark, FileText } from "lucide-react";
+import { ArrowRight, Clock, DollarSign, FileQuestionMark, FileText } from "lucide-react";
 import Hero from "../components/layout/Hero";
 import Navbar from "../components/layout/Navbar";
 import FeatureHighlight from "../components/ui/FeatureHighlight";
 import SectionHeader from "../components/ui/SectionHeader";
 import PricingCard from "../components/ui/PricingCard";
 import Testimonial from "../components/ui/Testimonial";
+import { NavLink } from "react-router";
+import Footer from "../components/layout/Footer";
 
 export default function Home() {
   return (
@@ -146,6 +148,40 @@ export default function Home() {
             />
           </div>
         </section>
+
+        <section className="mx-auto">
+          <SectionHeader title={<>Vanliga frågor</>} tag="FAQ" />
+          <div className="flex flex-col gap-4">
+            <div>
+              <b>Behöver jag ett kreditkort för att börja?</b>
+              <p>Nej. Gratisplanen kräver inget kreditkort och gäller för alltid utan bindning.</p>
+            </div>
+            <div>
+              <b>Är appen godkänd för svensk moms?</b>
+              <p>Ja. Appen hanterar 25%, 12% och 6% moms korrekt och fakturorna uppfyller Skatteverkets krav.</p>
+            </div>
+            <div>
+              <b>Kan jag exportera till mitt bokföringsprogram?</b>
+              <p>Pro- och Företagsplanen inkluderar SIE4-export som importeras direkt i Fortnox, Visma och Bokio.</p>
+            </div>
+            <div>
+              <b>Kan jag lägga till mitt eget logotyp?</b>
+              <p>Ja, på Pro och uppåt kan du ladda upp logotyp och anpassa färg på dina PDF-fakturor.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex w-full flex-col items-center justify-center gap-4 rounded-xl bg-indigo-500 p-16">
+          <h4 className="font-serif text-5xl font-semibold text-white">Redo att få betalt snabbare?</h4>
+          <p className="text-center text-neutral-200">
+            Gå med xxxx+ svenska frilansare och småföretagare. Gratis att börja.
+          </p>
+          <NavLink to="#" className="flex items-center justify-center rounded-xl bg-white px-6 py-2 text-indigo-500">
+            Skapa gratis konto <ArrowRight size={12} />
+          </NavLink>
+        </section>
+
+        <Footer />
       </div>
     </div>
   );

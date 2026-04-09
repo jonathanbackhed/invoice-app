@@ -17,7 +17,7 @@ export default function Testimonial({ text, rating, name, subName }: Props) {
         ))}
       </span>
       <p>
-        "Har testat Fortnox och Visma men det var alldeles för mycket. Det här är precis rätt nivå — snabbt och enkelt."
+        <q>{text}</q>
       </p>
       <div className="flex items-center gap-2">
         <div className="size-8 rounded-full bg-indigo-50"></div>
